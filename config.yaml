@@ -1,0 +1,4 @@
+data:
+  filepath: "data/dataset.csv"
+  target_column: "Churn"
+  random_state: 42
