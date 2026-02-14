@@ -15,7 +15,7 @@ class DataSplitter:
         random_state: int
     ) -> Tuple[pd.DataFrame, pd.DataFrame, pd.Series, pd.Series]:
         
-        X = df.drop(columns=[target, 'customerID'])
+        X = df.drop(columns=[target])
         y = df[target]
         
         X_train, X_test, y_train, y_test = train_test_split(
